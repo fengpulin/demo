@@ -7,11 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-MY first maven struts project
-<form action="login" method="post">
-	user name:<input type="text" name="user.name"></input><br/>
-	password:<input type="password" name="user.password"></input>
-	<input type="submit" value="submit"></input>
-</form>
+<h1>login success</h1>
 </body>
 </html>

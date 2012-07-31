@@ -19,6 +19,15 @@
                 /views/index.jsp
             </result>
         </action>
+        
+        <action name="login" class="com.lfp.struts.action.LoginAction" method="login">
+        	<result name="success">
+				/views/success.jsp
+            </result>
+			<result name="error">
+				/views/error.jsp
+            </result>
+        </action>
     </package>
 
     <!-- Add packages here -->
