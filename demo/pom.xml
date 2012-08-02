@@ -72,4 +72,32 @@
 			<version>3.1</version>
 		</dependency>
 	</dependencies>
+
+	<build>
+		<plugins>
+			<!-- 资源编码UTF-8 -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<configuration>
+					<encoding>UTF-8</encoding>
+				</configuration>
+			</plugin>
+
+			<!-- 使用1.6级别编译；代码为UTF-8编码；只编译指定的位置 -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+					<verbose>true</verbose>
+					<encoding>UTF-8</encoding>
+					<compilerArguments>
+						<sourcepath>${project.basedir}/${project.build.sourceDirectory}</sourcepath>
+					</compilerArguments>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 </project>

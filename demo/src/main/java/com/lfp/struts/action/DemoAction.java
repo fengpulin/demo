@@ -1,10 +1,17 @@
 package com.lfp.struts.action;
 
+import java.io.Serializable;
+
 import com.opensymphony.xwork2.ActionSupport;
 
-public class DemoAction extends ActionSupport{
+public class DemoAction extends ActionSupport implements Serializable {
 
-	public String show(){
+	/**
+	 * 序列化
+	 */
+	private static final long serialVersionUID = 1L;
+
+	public String show() {
 		return SUCCESS;
 	}
 }
