@@ -13,7 +13,7 @@
 
 
     <package name="default" namespace="/" extends="struts-default">
-        <default-action-ref name="index" />
+        <default-action-ref name="index"/>
         <action name="index" class="com.lfp.struts.action.DemoAction" method="show">
             <result>
                 /views/index.jsp
@@ -26,6 +26,12 @@
             </result>
 			<result name="error">
 				/views/error.jsp
+            </result>
+        </action>
+        
+        <action name="fileUpload" class="com.lfp.struts.action.UploadFileAction" method="execute">
+            <result>
+                /views/uploadFileDemo.jsp
             </result>
         </action>
     </package>
