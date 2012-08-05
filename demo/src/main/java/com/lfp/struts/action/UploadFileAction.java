@@ -77,6 +77,11 @@ public class UploadFileAction extends ActionSupport implements Serializable {
 		this.imageFileName = imageFileName;
 	}
 
+	/**
+	 * 
+	 * @param src
+	 * @param dst
+	 */
 	private static void copy(File src, File dst) {
 		try {
 			InputStream in = null;
@@ -120,5 +125,4 @@ public class UploadFileAction extends ActionSupport implements Serializable {
 		copy(myFile, imageFile);
 		return SUCCESS;
 	}
-
 }

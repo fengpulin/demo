@@ -62,7 +62,7 @@ public class LoginAction extends ActionSupport implements Serializable {
 	public void setUser2(User user2) {
 		this.user2 = user2;
 	}
-
+	
 	public String login() {
 		// 从前台取数据(自动注入的方式传入数据)
 		String name = StringUtils.trim(user.getName());
