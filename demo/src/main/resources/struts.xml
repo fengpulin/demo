@@ -34,6 +34,12 @@
                 /views/uploadFileDemo.jsp
             </result>
         </action>
+        
+        <action name="accessWebElement" class="com.lfp.struts.action.AccessWebElementAction" method="execute">
+            <result>
+                /views/accessWebElement.jsp
+            </result>
+        </action>
 
     </package>
 
