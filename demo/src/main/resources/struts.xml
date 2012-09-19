@@ -11,7 +11,6 @@
     <include file="example.xml"/>
 
 
-
     <package name="default" namespace="/" extends="struts-default">
         <default-action-ref name="index"/>
         <action name="index" class="com.lfp.struts.action.DemoAction" method="show">
@@ -40,7 +39,6 @@
                 /views/accessWebElement.jsp
             </result>
         </action>
-
     </package>
 
 	<package name="bootstrap" namespace="/" extends="struts-default">
@@ -50,7 +48,24 @@
             </result>
         </action>
     </package>
-    
+    <package name="resultType" namespace="/resultType" extends="struts-default">
+		<default-action-ref name="resultType"/>
+		<action name="resultType">
+            <result>
+                /views/resultType.jsp
+            </result>
+        </action>
+		<action name="dispatcher">
+            <result type="dispatcher">
+                /views/forwardResult.jsp
+            </result>
+        </action>
+        <action name="redirect">
+            <result type="redirect">
+                /views/forwardResult.jsp
+            </result>
+        </action>
+	</package>
     <!-- Add packages here -->
 
 </struts>
