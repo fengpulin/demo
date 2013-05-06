@@ -48,7 +48,7 @@
     <bean id="freemarkerConfig"
 		class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">
 		<property name="templateLoaderPath">
-			<value>views/</value>
+			<value>/views/</value>
 		</property>
 	</bean>
 </beans>
