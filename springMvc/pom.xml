@@ -10,7 +10,7 @@
 
 	<properties>
 		<!-- Spring version -->
-		<version.spring>3.2.1.RELEASE</version.spring>
+		<version.spring>3.2.4.RELEASE</version.spring>
 	</properties>
 
 	<dependencies>
